@@ -37,8 +37,6 @@ pub struct VeditApp {
 }
 
 fn main() -> eframe::Result {
-    env_logger::init();
-
     let options = eframe::NativeOptions {
         viewport: egui::ViewportBuilder::default(),
         ..Default::default()

@@ -40,9 +40,7 @@ pub fn close_file(app: &mut VeditApp) {
             current_file.backing_file_name.clone()
         };
 
-        app.confirmclose = Some(Confirmation {
-            filename: fname,
-        });
+        app.confirmclose = Some(Confirmation { filename: fname });
     }
 }
 

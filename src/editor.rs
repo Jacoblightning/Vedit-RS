@@ -43,7 +43,7 @@ pub fn editor_display(app: &mut VeditApp, ctx: &egui::Context) {
 
             egui::ScrollArea::vertical().show(ui, |ui| {
                 // Return the buffer for the currently selected file
-    
+
                 let text_editor = egui::TextEdit::multiline(
                     &mut app
                         .open_file_mapping
@@ -53,7 +53,7 @@ pub fn editor_display(app: &mut VeditApp, ctx: &egui::Context) {
                 )
                 .frame(false)
                 .font(egui::TextStyle::Heading);
-    
+
                 let response = ui.add_sized(ui.available_size(), text_editor);
                 response.request_focus();
                 // Little * save icon
