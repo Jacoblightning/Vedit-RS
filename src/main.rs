@@ -9,7 +9,7 @@ use std::path::PathBuf;
 use eframe::egui;
 use eframe::egui::RichText;
 
-// The intenal structure for an open file
+// The internal structure for an open file
 struct OpenFile {
     id: u64,
     buffer: String,
